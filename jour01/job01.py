@@ -6,6 +6,4 @@ class Operation:
 # Instancier la classe
 operation_instance = Operation(12, 29)
 
-# Imprimer l'objet en console
-print(f"Nombre 1: {operation_instance.nombre1}")
-print(f"Nombre 2: {operation_instance.nombre2}")
+print(operation_instance)
