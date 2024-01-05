@@ -29,23 +29,5 @@ class Professeur(Personne):
         print("Le cours va commencer")
 
 
-# Instanciation d'une personne
-personne = Personne()
-personne.afficherAge()  # Affiche l'âge par défaut (14) en console
-personne.bonjour()  # Affiche "Hello" en console
-personne.modifierAge(25)
-personne.afficherAge()  # Affiche le nouvel âge (25) en console
-
-# Instanciation d'un élève
 eleve = Eleve()
 eleve.afficherAge()  # Affiche l'âge par défaut (14) en console
-eleve.bonjour()  # Affiche "Hello" en console
-eleve.allerEnCours()  # Affiche "Je vais en cours" en console
-eleve.modifierAge(16)
-eleve.afficherAge()  # Affiche le nouvel âge (16) en console
-
-# Instanciation d'un professeur
-professeur = Professeur(matiereEnseignee="Mathématiques", age=35)
-professeur.afficherAge()  # Affiche l'âge spécifié (35) en console
-professeur.bonjour()  # Affiche "Hello" en console
-professeur.enseigner()  # Affiche "Le cours va commencer" en console
