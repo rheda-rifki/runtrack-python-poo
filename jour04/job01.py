@@ -29,5 +29,10 @@ class Professeur(Personne):
         print("Le cours va commencer")
 
 
+# Instanciation d'une personne
+personne = Personne()
+personne.afficherAge()  # Affiche l'âge par défaut (14) en console
+
+# Instanciation d'un élève
 eleve = Eleve()
-eleve.afficherAge()  # Affiche l'âge par défaut (14) en console
+eleve.afficherAge()  # Affiche l'âge par défaut (14) de la personne en console
