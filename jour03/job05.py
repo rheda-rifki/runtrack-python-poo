@@ -6,7 +6,7 @@ class Personnage:
         self.vie = vie
 
     def attaquer(self, cible):
-        degats = random.randint(5, 15)
+        degats = random.randint(5, 20)
         print(f"{self.nom} attaque {cible.nom} et lui inflige {degats} points de dégâts.")
         cible.vie -= degats
 
@@ -22,14 +22,14 @@ class Jeu:
 
         # Initialisation des personnages en fonction du niveau
         if self.niveau == 1:
-            joueur = Personnage("Joueur", 100)
-            ennemi = Personnage("Ennemi", 50)
+            joueur = Personnage("Hakim", 100)
+            ennemi = Personnage("Maxence", 50)
         elif self.niveau == 2:
-            joueur = Personnage("Joueur", 80)
-            ennemi = Personnage("Ennemi", 60)
+            joueur = Personnage("Hakim", 80)
+            ennemi = Personnage("Maxence", 60)
         elif self.niveau == 3:
-            joueur = Personnage("Joueur", 60)
-            ennemi = Personnage("Ennemi", 80)
+            joueur = Personnage("Hakim", 60)
+            ennemi = Personnage("Maxence", 80)
         else:
             print("Niveau invalide. Choisissez un niveau entre 1 et 3.")
             return
